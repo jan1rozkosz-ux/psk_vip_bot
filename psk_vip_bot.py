@@ -8,7 +8,7 @@ api_id = 24410825
 api_hash = "1af7fdb76b96212d2189a1cd14ebfd1f"
 source_channel = "https://t.me/+Vkcfjcl669ZjZjFi"   # wklej swój source (link prywatny lub @nazwa lub ID)
 target_channel = "https://t.me/+zMnt781-wrkyNDNk"   # wklej swój target (link prywatny lub @nazwa lub ID)
-session_name = "psk_session"  # nazwa pliku sesji - zmień, jeśli chcesz oddzielne konto
+session_name = "psk_user_session 2"  # nazwa pliku sesji - zmień, jeśli chcesz oddzielne konto
 # ====================
 
 
@@ -113,6 +113,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 

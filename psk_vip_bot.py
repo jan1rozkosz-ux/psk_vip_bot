@@ -69,7 +69,10 @@ def modify_text(text: str) -> str:
 
 
 async def main():
-   client = TelegramClient("user_session", api_id, api_hash)
+   import os
+session_path = os.path.join(os.path.dirname(__file__), "user_session.session")
+client = TelegramClient(session_path.replace(".session", ""), api_id, api_hash)
+
     await client.start()  # tu pojawi się prośba o numer przy pierwszym uruchomieniu
     me = await client.get_me()
     print(f"✅ Logged in as: {me.username or me.first_name} ({me.id})")
@@ -104,4 +107,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 

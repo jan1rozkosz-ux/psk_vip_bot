@@ -71,18 +71,13 @@ def modify_text(text: str) -> str:
 import os
 
 async def main():
-    session_path = os.path.join(os.path.dirname(__file__), "user_session.session")
+    session_path = os.path.join(os.path.dirname(__file__), session_name)
     client = TelegramClient(session_path.replace(".session", ""), api_id, api_hash)
 
-    await client.start()  # tu pojawi się prośba o numer przy pierwszym uruchomieniu
+    await client.start()
     me = await client.get_me()
     print(f"✅ Logged in as: {me.username or me.first_name} ({me.id})")
     print("✅ User-bot started, listening only for TEXT messages...")
-
-   
-
-    
-
 
     @client.on(events.NewMessage(chats=source_channel))
     async def handler(event):
@@ -111,8 +106,10 @@ async def main():
     await client.run_until_disconnected()
 
 
+
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 

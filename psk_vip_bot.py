@@ -68,7 +68,6 @@ def modify_text(text: str) -> str:
     return f"{header}\n{text.strip()}\n{footer}"
 
 
-async def main():
 import os
 
 async def main():
@@ -79,6 +78,10 @@ async def main():
     me = await client.get_me()
     print(f"✅ Logged in as: {me.username or me.first_name} ({me.id})")
     print("✅ User-bot started, listening only for TEXT messages...")
+
+   
+
+    
 
 
     @client.on(events.NewMessage(chats=source_channel))
@@ -110,6 +113,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 

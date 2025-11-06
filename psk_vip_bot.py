@@ -1,4 +1,4 @@
-# psk_vip_bot.py
+# boss_vip_bot.py
 from telethon import TelegramClient, events
 import asyncio
 import random, re
@@ -109,6 +109,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 

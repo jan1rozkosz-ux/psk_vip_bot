@@ -6,7 +6,7 @@ import random, re
 # === KONFIGURACJA ===
 api_id = 39844214
 api_hash = "e56fb709ccd43e150239796843874d65"
-source_channel = "https://t.me/+Vkcfjcl669ZjZjFi"   # wklej swój source (link prywatny lub @nazwa lub ID)
+source_channel = "https://t.me/+S5hCmht-ezAwMTNk"   # wklej swój source (link prywatny lub @nazwa lub ID)
 target_channel = "https://t.me/+oYR22yJmwcxhYWZk"   # wklej swój target (link prywatny lub @nazwa lub ID)
 session_name = session_name = "user_session.session"  # nazwa pliku sesji - zmień, jeśli chcesz oddzielne konto
 # ====================
@@ -109,6 +109,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 
